@@ -4,7 +4,7 @@ import {Tournament} from "../tournament";
 import {TournamentQueryResponse} from "../tournament-query-response";
 import {TournamentQuery} from "../tournament-query";
 
-const https = require("https");
+import * as https from "https";
 
 export const TournamentScrapper = {
     fetchTournaments: async (): Promise<Tournament[]> => {
