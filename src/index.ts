@@ -1,4 +1,3 @@
-import {TournamentFinderBot} from "./bot/bot";
+import {bot} from "./bot/bot";
 
-const bot = new TournamentFinderBot();
 bot.startBot();

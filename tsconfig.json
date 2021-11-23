@@ -1,10 +1,10 @@
 {
   "compilerOptions": {
-    "target": "es6",
+    "target": "es2017",
     "lib": [
       "es6"
     ],
-    "module": "es6",
+    "module": "esnext",
     "moduleResolution": "Node",
     "rootDir": "./src/",
     "outDir": "./dist/",

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
-    "start": "npx tsc && node build/index.js",
+    "start": "webpack --mode development && node dist/bundle.js",
     "test": "jest"
   },
   "author": "",
@@ -15,7 +15,10 @@
     "cron": "1.8.2",
     "dotenv": "10.0.0",
     "https": "1.0.0",
-    "node-telegram-bot-api": "0.54.0"
+    "lowdb": "3.0.0",
+    "node-telegram-bot-api": "0.54.0",
+    "path": "0.12.7",
+    "url": "0.11.0"
   },
   "devDependencies": {
     "@babel/core": "7.16.0",

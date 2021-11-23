@@ -7,7 +7,7 @@ const baseQuery: TournamentQuery = {
 }
 
 export const TournamentQueryBuilder = {
-    build: (distance: number, postalCode: string, offset: number) => {
+    build: (distance: number, postalCode: string, offset: number): TournamentQuery => {
         const today: Date = new Date();
         const inTwoYear: Date = new Date(today.getFullYear() + 2, today.getMonth(), today.getDay());
 

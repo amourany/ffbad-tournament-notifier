@@ -1,5 +1,4 @@
 import axios from "axios";
-import {TournamentQueryBuilder} from "../tournament-query.builder";
 import {Tournament} from "../tournament";
 import {TournamentQueryResponse} from "../tournament-query-response";
 import {TournamentQuery} from "../tournament-query";
@@ -7,8 +6,8 @@ import {TournamentQuery} from "../tournament-query";
 import * as https from "https";
 
 export const TournamentScrapper = {
-    fetchTournaments: async (): Promise<Tournament[]> => {
-        const query = TournamentQueryBuilder.build(30, '92170', 0);
+    fetchTournaments: async (query: TournamentQuery): Promise<Tournament[]> => {
+        // const query = TournamentQueryBuilder.build(30, '92170', 0);
         return TournamentScrapper.recurseFetch(query, []);
     },
     recurseFetch: async (query: TournamentQuery, previousResults: Tournament[]): Promise<Tournament[]> => {
